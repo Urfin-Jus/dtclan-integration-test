@@ -1,0 +1,240 @@
+{
+  "$id": "http://dtclan-integration-test/test/resources/scheme/branch-so-scheme.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "id": {
+      "$id": "/properties/id",
+      "type": "string"
+    },
+    "href": {
+      "$id": "/properties/href",
+      "type": "string"
+    },
+    "externalId": {
+      "$id": "/properties/externalId",
+      "type": "string"
+    },
+    "priority": {
+      "$id": "/properties/priority",
+      "type": "integer"
+    },
+    "state": {
+      "$id": "/properties/state",
+      "type": "string"
+    },
+    "requestedStartDate": {
+      "$id": "/properties/requestedStartDate",
+      "type": "string"
+    },
+    "startDate": {
+      "$id": "/properties/startDate",
+      "type": "string"
+    },
+    "orderSpecification": {
+      "$id": "/properties/orderSpecification",
+      "type": "object",
+      "properties": {
+        "href": {
+          "$id": "/properties/orderSpecification/properties/href",
+          "type": "string"
+        },
+        "name": {
+          "$id": "/properties/orderSpecification/properties/name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "href",
+        "name"
+      ]
+    },
+    "orderItem": {
+      "$id": "/properties/orderItem",
+      "type": "array",
+      "items": {
+        "$id": "/properties/orderItem/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/orderItem/items/properties/id",
+            "type": "string"
+          },
+          "action": {
+            "$id": "/properties/orderItem/items/properties/action",
+            "type": "string"
+          },
+          "state": {
+            "$id": "/properties/orderItem/items/properties/state",
+            "type": "string"
+          },
+          "service": {
+            "$id": "/properties/orderItem/items/properties/service",
+            "type": "object",
+            "properties": {
+              "id": {
+                "$id": "/properties/orderItem/items/properties/service/properties/id",
+                "type": "string"
+              },
+              "href": {
+                "$id": "/properties/orderItem/items/properties/service/properties/href",
+                "type": "string"
+              },
+              "name": {
+                "$id": "/properties/orderItem/items/properties/service/properties/name",
+                "type": "string"
+              },
+              "serviceState": {
+                "$id": "/properties/orderItem/items/properties/service/properties/serviceState",
+                "type": "string"
+              },
+              "hasStarted": {
+                "$id": "/properties/orderItem/items/properties/service/properties/hasStarted",
+                "type": "boolean"
+              },
+              "orderDate": {
+                "$id": "/properties/orderItem/items/properties/service/properties/orderDate",
+                "type": "string"
+              },
+              "startMode": {
+                "$id": "/properties/orderItem/items/properties/service/properties/startMode",
+                "type": "string"
+              },
+              "stateful": {
+                "$id": "/properties/orderItem/items/properties/service/properties/stateful",
+                "type": "boolean"
+              },
+              "serviceSpecification": {
+                "$id": "/properties/orderItem/items/properties/service/properties/serviceSpecification",
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "$id": "/properties/orderItem/items/properties/service/properties/serviceSpecification/properties/id",
+                    "type": "string"
+                  },
+                  "name": {
+                    "$id": "/properties/orderItem/items/properties/service/properties/serviceSpecification/properties/name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name"
+                ]
+              },
+              "serviceCharacteristic": {
+                "$id": "/properties/orderItem/items/properties/service/properties/serviceCharacteristic",
+                "type": "array",
+                "items": {
+                  "$id": "/properties/orderItem/items/properties/service/properties/serviceCharacteristic/items",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$id": "/properties/orderItem/items/properties/service/properties/serviceCharacteristic/items/properties/name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ]
+                }
+              },
+              "relatedParty": {
+                "$id": "/properties/orderItem/items/properties/service/properties/relatedParty",
+                "type": "array",
+                "items": {
+                  "$id": "/properties/orderItem/items/properties/service/properties/relatedParty/items",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "$id": "/properties/orderItem/items/properties/service/properties/relatedParty/items/properties/id",
+                      "type": "string"
+                    },
+                    "name": {
+                      "$id": "/properties/orderItem/items/properties/service/properties/relatedParty/items/properties/name",
+                      "type": "string"
+                    },
+                    "role": {
+                      "$id": "/properties/orderItem/items/properties/service/properties/relatedParty/items/properties/role",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "role"
+                  ]
+                }
+              },
+              "serviceEnabled": {
+                "$id": "/properties/orderItem/items/properties/service/properties/serviceEnabled",
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "href",
+              "name",
+              "serviceState",
+              "hasStarted",
+              "orderDate",
+              "startMode",
+              "stateful",
+              "serviceSpecification",
+              "serviceCharacteristic",
+              "relatedParty",
+              "serviceEnabled"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "action",
+          "state",
+          "service"
+        ]
+      }
+    },
+    "relatedParty": {
+      "$id": "/properties/relatedParty",
+      "type": "array",
+      "items": {
+        "$id": "/properties/relatedParty/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/relatedParty/items/properties/id",
+            "type": "string"
+          },
+          "name": {
+            "$id": "/properties/relatedParty/items/properties/name",
+            "type": "string"
+          },
+          "role": {
+            "$id": "/properties/relatedParty/items/properties/role",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "role"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "href",
+    "externalId",
+    "priority",
+    "state",
+    "requestedStartDate",
+    "startDate",
+    "orderSpecification",
+    "orderItem",
+    "relatedParty"
+  ],
+  "additionalProperties": true
+}

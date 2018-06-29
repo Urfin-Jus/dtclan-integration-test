@@ -1,0 +1,13 @@
+{
+  "externalId": "",
+  "state": "",
+  "relatedParty": [{"role":"customer","id":""}],
+  "orderItem": [{ "action": "",
+                  "service": {"id": "",
+                              "serviceSpecification": {"id":"vpn"},
+                              "serviceCharacteristic": [{"name":"vpn-id","value":""},
+                                                        {"name":"sites-quota","value":""}]
+                              }
+                  }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "externalId": "",
+  "state": "InProgress",
+  "relatedParty": [{"role":"customer","id":""}],
+  "orderItem": [{ "action": "add",
+                  "service": {"id": "",
+                              "serviceSpecification": {"id":"branch-ccpe"},
+                              "serviceCharacteristic": [  { "name": "branch-id",                  "value": "" },
+                                                          { "name": "customer-branch-net-ip",     "value": "192.168.10.0/24" },
+                                                          { "name": "default-gateway",            "value": "192.168.10.1" },
+                                                          { "name": "session-login",              "value": "" },
+                                                          { "name": "external-bandwidth",         "value": "20" },
+                                                          { "name": "external-uplink-bandwidth",  "value": "20" }
+                              ]
+                              }
+                  }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "$id": "http://scheme/branch-service-inventory-scheme.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "key": {
+      "$id": "/properties/key",
+      "type": "string",
+      "examples": [
+        "cpe-branch-9151140081651237468"
+      ]
+    },
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "examples": [
+        "Primary CPE Branch NS 9151140081651237468"
+      ]
+    },
+    "descriptorKey": {
+      "$id": "/properties/descriptorKey",
+      "type": "string",
+      "examples": [
+        "dtclan_ccpe_ns"
+      ]
+    },
+    "descriptorId": {
+      "$id": "/properties/descriptorId",
+      "type": "integer",
+      "examples": [
+        9146030516351797000
+      ]
+    },
+    "categoryKey": {
+      "$id": "/properties/categoryKey",
+      "type": "string",
+      "examples": [
+        "be09a73e-0d3d-417a-98b7-651da72a38d4"
+      ]
+    },
+    "domainKey": {
+      "$id": "/properties/domainKey",
+      "type": "string",
+      "examples": [
+        "QA-1"
+      ]
+    },
+    "constituentVnfRecords": {
+      "$id": "/properties/constituentVnfRecords",
+      "type": "array",
+      "items": {
+        "$id": "/properties/constituentVnfRecords/items",
+        "type": "object",
+        "properties": {
+          "key": {
+            "$id": "/properties/constituentVnfRecords/items/properties/key",
+            "type": "string",
+            "examples": [
+              "ipfe"
+            ]
+          },
+          "name": {
+            "$id": "/properties/constituentVnfRecords/items/properties/name",
+            "type": "string",
+            "examples": [
+              "CCPE Network Service IPFE NF CVNF Record #504788"
+            ]
+          },
+          "descriptorKey": {
+            "$id": "/properties/constituentVnfRecords/items/properties/descriptorKey",
+            "type": "string",
+            "examples": [
+              "uuid-5e0bb8a6-ad12-4737-abae-63008b359639"
+            ]
+          },
+          "virtualNetworkFunction": {
+            "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction",
+            "type": "object",
+            "properties": {
+              "name": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/name",
+                "type": "string",
+                "examples": [
+                  "CPE Network Service IPFE NF vCPE VNF VNF Record #10878"
+                ]
+              },
+              "descriptorId": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/descriptorId",
+                "type": "integer",
+                "examples": [
+                  9145358674351086000
+                ]
+              },
+              "resourceId": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/resourceId",
+                "type": "string",
+                "examples": [
+                  "9149548191851398428"
+                ]
+              },
+              "status": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/status",
+                "type": "string",
+                "examples": [
+                  "ACTIVE"
+                ]
+              },
+              "vnfConnectionPointRecords": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords",
+                "type": "array",
+                "items": {
+                  "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/name",
+                      "type": "string",
+                      "examples": [
+                        "CPE Access Interface"
+                      ]
+                    },
+                    "descriptorId": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/descriptorId",
+                      "type": "integer",
+                      "examples": [
+                        9146082665651527000
+                      ]
+                    },
+                    "cpKey": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/cpKey",
+                      "type": "string",
+                      "examples": [
+                        "9149548195051399920"
+                      ]
+                    },
+                    "macAddress": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/macAddress",
+                      "type": "string",
+                      "examples": [
+                        "02:00:12:77:8d:ef"
+                      ]
+                    },
+                    "ipAddress": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/ipAddress",
+                      "type": "string",
+                      "examples": [
+                        "10.2.2.254"
+                      ]
+                    },
+                    "status": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/status",
+                      "type": "string",
+                      "examples": [
+                        "ADDED"
+                      ]
+                    },
+                    "connectionType": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/connectionType",
+                      "type": "string",
+                      "examples": [
+                        "PARAVIRTUALIZED"
+                      ]
+                    },
+                    "connectionRole": {
+                      "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/vnfConnectionPointRecords/items/properties/connectionRole",
+                      "type": "string",
+                      "examples": [
+                        "DATA_OTHER"
+                      ]
+                    }
+                  }
+                }
+              },
+              "deploymentFlavor": {
+                "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/deploymentFlavor",
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/deploymentFlavor/properties/key",
+                    "type": "string",
+                    "examples": [
+                      "vCPE_DF"
+                    ]
+                  },
+                  "name": {
+                    "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/deploymentFlavor/properties/name",
+                    "type": "string",
+                    "examples": [
+                      "vCPE Deployment Flavor"
+                    ]
+                  },
+                  "externalKey": {
+                    "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/deploymentFlavor/properties/externalKey",
+                    "type": "string",
+                    "examples": [
+                      "vCPE_DF"
+                    ]
+                  },
+                  "default": {
+                    "$id": "/properties/constituentVnfRecords/items/properties/virtualNetworkFunction/properties/deploymentFlavor/properties/default",
+                    "type": "boolean",
+                    "examples": [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "constituentVnfConnectionPointRecords": {
+            "$id": "/properties/constituentVnfRecords/items/properties/constituentVnfConnectionPointRecords",
+            "type": "array",
+            "items": {
+              "$id": "/properties/constituentVnfRecords/items/properties/constituentVnfConnectionPointRecords/items",
+              "type": "object",
+              "properties": {
+                "key": {
+                  "$id": "/properties/constituentVnfRecords/items/properties/constituentVnfConnectionPointRecords/items/properties/key",
+                  "type": "string",
+                  "examples": [
+                    "uuid-57d615f3-f258-4d26-a47e-6ff7b67fa9b8"
+                  ]
+                },
+                "name": {
+                  "$id": "/properties/constituentVnfRecords/items/properties/constituentVnfConnectionPointRecords/items/properties/name",
+                  "type": "string",
+                  "examples": [
+                    "Constituent Connection Point Record#9151140082051238053"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "virtualLinks": {
+      "$id": "/properties/virtualLinks",
+      "type": "array",
+      "items": {
+        "$id": "/properties/virtualLinks/items",
+        "type": "object",
+        "properties": {
+          "key": {
+            "$id": "/properties/virtualLinks/items/properties/key",
+            "type": "string",
+            "examples": [
+              "data"
+            ]
+          },
+          "name": {
+            "$id": "/properties/virtualLinks/items/properties/name",
+            "type": "string",
+            "examples": [
+              "CCPE Network Service data VL Record #504796"
+            ]
+          },
+          "descriptorKey": {
+            "$id": "/properties/virtualLinks/items/properties/descriptorKey",
+            "type": "string",
+            "examples": [
+              "kde4150de-5534-4712-8a08-f51027d398bc"
+            ]
+          },
+          "descriptorId": {
+            "$id": "/properties/virtualLinks/items/properties/descriptorId",
+            "type": "integer",
+            "examples": [
+              9146030578751799000
+            ]
+          },
+          "cidr": {
+            "$id": "/properties/virtualLinks/items/properties/cidr",
+            "type": "string",
+            "examples": [
+              "10.2.1.0/24"
+            ]
+          },
+          "dhcpEnabled": {
+            "$id": "/properties/virtualLinks/items/properties/dhcpEnabled",
+            "type": "boolean",
+            "examples": [
+              false
+            ]
+          },
+          "subnetName": {
+            "$id": "/properties/virtualLinks/items/properties/subnetName",
+            "type": "string",
+            "examples": [
+              "CCPE Network Service data VL Record #504796"
+            ]
+          },
+          "vimName": {
+            "$id": "/properties/virtualLinks/items/properties/vimName",
+            "type": "string",
+            "examples": [
+              "default-domain:QA-1:default-virtual-network-7ec7f674-78c6-46b1-ae3b-2694323080dc"
+            ]
+          },
+          "vnfConnectionPointRecords": {
+            "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords",
+            "type": "array",
+            "items": {
+              "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/name",
+                  "type": "string",
+                  "examples": [
+                    "CPE Data Interface"
+                  ]
+                },
+                "descriptorId": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/descriptorId",
+                  "type": "integer",
+                  "examples": [
+                    9145358674351086000
+                  ]
+                },
+                "cpKey": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/cpKey",
+                  "type": "string",
+                  "examples": [
+                    "9149548195051399918"
+                  ]
+                },
+                "macAddress": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/macAddress",
+                  "type": "string",
+                  "examples": [
+                    "02:98:1b:ed:d8:8a"
+                  ]
+                },
+                "ipAddress": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/ipAddress",
+                  "type": "string",
+                  "examples": [
+                    "10.2.1.254"
+                  ]
+                },
+                "status": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/status",
+                  "type": "string",
+                  "examples": [
+                    "ADDED"
+                  ]
+                },
+                "connectionType": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/connectionType",
+                  "type": "string",
+                  "examples": [
+                    "PARAVIRTUALIZED"
+                  ]
+                },
+                "connectionRole": {
+                  "$id": "/properties/virtualLinks/items/properties/vnfConnectionPointRecords/items/properties/connectionRole",
+                  "type": "string",
+                  "examples": [
+                    "DATA_OTHER"
+                  ]
+                }
+              }
+            }
+          },
+          "virtualInterfacePointRecords": {
+            "$id": "/properties/virtualLinks/items/properties/virtualInterfacePointRecords",
+            "type": "array",
+            "items": {
+              "$id": "/properties/virtualLinks/items/properties/virtualInterfacePointRecords/items",
+              "type": "object",
+              "properties": {
+                "key": {
+                  "$id": "/properties/virtualLinks/items/properties/virtualInterfacePointRecords/items/properties/key",
+                  "type": "string",
+                  "examples": [
+                    "uuid-f466d49c-c348-40e9-a305-c7829a4f8444"
+                  ]
+                },
+                "name": {
+                  "$id": "/properties/virtualLinks/items/properties/virtualInterfacePointRecords/items/properties/name",
+                  "type": "string",
+                  "examples": [
+                    "Constituent Connection Point Record#9151140082051238054"
+                  ]
+                }
+              }
+            }
+          },
+          "segmentationType": {
+            "$id": "/properties/virtualLinks/items/properties/segmentationType",
+            "type": "string",
+            "examples": [
+              "VXLAN"
+            ]
+          },
+          "external": {
+            "$id": "/properties/virtualLinks/items/properties/external",
+            "type": "string",
+            "examples": [
+              "NO"
+            ]
+          },
+          "gatewayIP": {
+            "$id": "/properties/virtualLinks/items/properties/gatewayIP",
+            "type": "string",
+            "examples": [
+              "10.2.1.1"
+            ]
+          },
+          "allowTransit": {
+            "$id": "/properties/virtualLinks/items/properties/allowTransit",
+            "type": "string",
+            "examples": [
+              "NO"
+            ]
+          },
+          "floodUnknownUnicast": {
+            "$id": "/properties/virtualLinks/items/properties/floodUnknownUnicast",
+            "type": "string",
+            "examples": [
+              "NO"
+            ]
+          }
+        }
+      }
+    },
+    "domain": {
+      "$id": "/properties/domain",
+      "type": "object",
+      "properties": {
+        "key": {
+          "$id": "/properties/domain/properties/key",
+          "type": "string",
+          "examples": [
+            "QA-1"
+          ]
+        },
+        "name": {
+          "$id": "/properties/domain/properties/name",
+          "type": "string",
+          "examples": [
+            "QA-1"
+          ]
+        }
+      }
+    },
+    "tenantKey": {
+      "$id": "/properties/tenantKey",
+      "type": "string",
+      "examples": [
+        "QA-1"
+      ]
+    },
+    "instantiationTime": {
+      "$id": "/properties/instantiationTime",
+      "type": "string",
+      "examples": [
+        "2018-06-08T19:20:21Z"
+      ]
+    },
+    "status": {
+      "$id": "/properties/status",
+      "type": "string",
+      "examples": [
+        "ACTIVE"
+      ]
+    }
+  }
+}

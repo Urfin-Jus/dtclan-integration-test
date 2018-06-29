@@ -1,0 +1,306 @@
+{
+  "$id": "http://scheme/branch-service-inventory-scheme.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "examples": [
+        "IPFE VNF Record #0000010946"
+      ]
+    },
+    "tenant": {
+      "$id": "/properties/tenant",
+      "type": "string",
+      "examples": [
+        "QA-1"
+      ]
+    },
+    "domain": {
+      "$id": "/properties/domain",
+      "type": "string",
+      "examples": [
+        "9149468572851817163"
+      ]
+    },
+    "vnfDescriptorKey": {
+      "$id": "/properties/vnfDescriptorKey",
+      "type": "string",
+      "examples": [
+        "uuid-18ed7935-e6c8-408c-a697-379332ce7dee"
+      ]
+    },
+    "vnfFlavor": {
+      "$id": "/properties/vnfFlavor",
+      "type": "string",
+      "examples": [
+        "9145358644951084857"
+      ]
+    },
+    "status": {
+      "$id": "/properties/status",
+      "type": "string",
+      "examples": [
+        "Allocated"
+      ]
+    },
+    "components": {
+      "$id": "/properties/components",
+      "type": "array",
+      "items": {
+        "$id": "/properties/components/items",
+        "type": "object",
+        "properties": {
+          "name": {
+            "$id": "/properties/components/items/properties/name",
+            "type": "string",
+            "examples": [
+              "IPFE VNFC Record #0000010950"
+            ]
+          },
+          "componentDescriptorKey": {
+            "$id": "/properties/components/items/properties/componentDescriptorKey",
+            "type": "string",
+            "examples": [
+              "vCPE_VNFC"
+            ]
+          },
+          "vduExternalKey": {
+            "$id": "/properties/components/items/properties/vduExternalKey",
+            "type": "string",
+            "examples": [
+              "vCPE_VDU"
+            ]
+          },
+          "redundancyState": {
+            "$id": "/properties/components/items/properties/redundancyState",
+            "type": "string",
+            "examples": [
+              "ACTIVE"
+            ]
+          },
+          "domain": {
+            "$id": "/properties/components/items/properties/domain",
+            "type": "string",
+            "examples": [
+              "9149468572851817163"
+            ]
+          },
+          "differentHostGroup": {
+            "$id": "/properties/components/items/properties/differentHostGroup",
+            "type": "array"
+          },
+          "vmVimId": {
+            "$id": "/properties/components/items/properties/vmVimId",
+            "type": "string",
+            "examples": [
+              "default-domain:QA-1:IPFE9149548191851398428"
+            ]
+          },
+          "scripts": {
+            "$id": "/properties/components/items/properties/scripts",
+            "type": "array"
+          },
+          "connectionPoints": {
+            "$id": "/properties/components/items/properties/connectionPoints",
+            "type": "array"
+          },
+          "vnfcMonitoringProfileKey": {
+            "$id": "/properties/components/items/properties/vnfcMonitoringProfileKey",
+            "type": "string",
+            "examples": [
+              "9146343429251391456"
+            ]
+          },
+          "external-key": {
+            "$id": "/properties/components/items/properties/external-key",
+            "type": "string",
+            "examples": [
+              "uuid-461a7be7-ec96-413e-9839-7017a927bd79"
+            ]
+          }
+        }
+      }
+    },
+    "characteristics": {
+      "$id": "/properties/characteristics",
+      "type": "array",
+      "items": {
+        "$id": "/properties/characteristics/items",
+        "type": "object",
+        "properties": {
+          "name": {
+            "$id": "/properties/characteristics/items/properties/name",
+            "type": "string",
+            "examples": [
+              "Data Interface Route Prefix Characteristic"
+            ]
+          },
+          "type": {
+            "$id": "/properties/characteristics/items/properties/type",
+            "type": "string",
+            "examples": [
+              "Text Characteristic"
+            ]
+          },
+          "isMultiple": {
+            "$id": "/properties/characteristics/items/properties/isMultiple",
+            "type": "boolean",
+            "examples": [
+              false
+            ]
+          },
+          "value": {
+            "$id": "/properties/characteristics/items/properties/value",
+            "type": "string",
+            "examples": [
+              "10.1.1.236/32|FC00:1:1:1:13C8:AC9:DD:9B78"
+            ]
+          },
+          "external-key": {
+            "$id": "/properties/characteristics/items/properties/external-key",
+            "type": "string",
+            "examples": [
+              "9146393537651287509"
+            ]
+          },
+          "key": {
+            "$id": "/properties/characteristics/items/properties/key",
+            "type": "string",
+            "examples": [
+              "9146393537651287509"
+            ]
+          }
+        }
+      }
+    },
+    "connectionPoints": {
+      "$id": "/properties/connectionPoints",
+      "type": "array",
+      "items": {
+        "$id": "/properties/connectionPoints/items",
+        "type": "object",
+        "properties": {
+          "name": {
+            "$id": "/properties/connectionPoints/items/properties/name",
+            "type": "string",
+            "examples": [
+              "CPE Data Interface IPFE CP Record #0000010947"
+            ]
+          },
+          "resourceId": {
+            "$id": "/properties/connectionPoints/items/properties/resourceId",
+            "type": "string",
+            "examples": [
+              "9149548195051399918"
+            ]
+          },
+          "cpVimId": {
+            "$id": "/properties/connectionPoints/items/properties/cpVimId",
+            "type": "string",
+            "examples": [
+              "981bedd8-8a27-4f57-a2db-c02f88d87275"
+            ]
+          },
+          "virtualLinkVimName": {
+            "$id": "/properties/connectionPoints/items/properties/virtualLinkVimName",
+            "type": "string",
+            "examples": [
+              "default-domain:QA-1:default-virtual-network-7ec7f674-78c6-46b1-ae3b-2694323080dc"
+            ]
+          },
+          "cpDescriptorKey": {
+            "$id": "/properties/connectionPoints/items/properties/cpDescriptorKey",
+            "type": "string",
+            "examples": [
+              "uuid-6b095f21-44d8-4c69-abda-821739227cbd"
+            ]
+          },
+          "macAddress": {
+            "$id": "/properties/connectionPoints/items/properties/macAddress",
+            "type": "string",
+            "examples": [
+              "02:98:1b:ed:d8:8a"
+            ]
+          },
+          "connectionRole": {
+            "$id": "/properties/connectionPoints/items/properties/connectionRole",
+            "type": "string",
+            "examples": [
+              "data-other"
+            ]
+          },
+          "connectionType": {
+            "$id": "/properties/connectionPoints/items/properties/connectionType",
+            "type": "string",
+            "examples": [
+              "Paravirtualized"
+            ]
+          },
+          "external-key": {
+            "$id": "/properties/connectionPoints/items/properties/external-key",
+            "type": "string",
+            "examples": [
+              "9149548195051399918"
+            ]
+          },
+          "ip-information": {
+            "$id": "/properties/connectionPoints/items/properties/ip-information",
+            "type": "array",
+            "items": {
+              "$id": "/properties/connectionPoints/items/properties/ip-information/items",
+              "type": "object",
+              "properties": {
+                "ip-address": {
+                  "$id": "/properties/connectionPoints/items/properties/ip-information/items/properties/ip-address",
+                  "type": "string",
+                  "examples": [
+                    "10.2.1.254"
+                  ]
+                }
+              }
+            }
+          },
+          "key": {
+            "$id": "/properties/connectionPoints/items/properties/key",
+            "type": "string",
+            "examples": [
+              "9149548195051399918"
+            ]
+          }
+        }
+      }
+    },
+    "externalAddresses": {
+      "$id": "/properties/externalAddresses",
+      "type": "array"
+    },
+    "virtualLinks": {
+      "$id": "/properties/virtualLinks",
+      "type": "array"
+    },
+    "instantiationTime": {
+      "$id": "/properties/instantiationTime",
+      "type": "string",
+      "examples": [
+        "2017-12-06T13:28:22Z"
+      ]
+    },
+    "external-key": {
+      "$id": "/properties/external-key",
+      "type": "string",
+      "examples": [
+        "9149548191851398428"
+      ]
+    },
+    "key": {
+      "$id": "/properties/key",
+      "type": "string",
+      "examples": [
+        "9149548191851398428"
+      ]
+    }
+  }
+}

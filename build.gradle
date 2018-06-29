@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile "org.codehaus.groovy:groovy-all:2.4.13"
+    testCompile 'io.rest-assured:rest-assured:3.1.0'
+    testCompile 'io.rest-assured:json-schema-validator:3.1.0'
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4-rc-2"
+    testCompile "com.athaydes:spock-reports:1.5.0", { transitive = false }
+    testCompile 'org.awaitility:awaitility:3.1.0'
+    testCompile 'org.awaitility:awaitility-groovy:3.1.0'
+    testCompile 'io.rest-assured:json-path:3.1.0'
+    testCompile 'org.slf4j:slf4j-api:1.7.13'
+    testCompile 'org.slf4j:slf4j-simple:1.7.13'
+
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir "test/resources"
+        }
+    }
+}
+
+
+test {
+    systemProperty 'com.athaydes.spockframework.report.showCodeBlocks', true
+    systemProperty 'com.athaydes.spockframework.report.outputDir', 'build/spock-reports'
+}
+

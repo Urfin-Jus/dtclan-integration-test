@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties" : {
+    "customer-id": { "type" : "string" },
+    "tenant-id": { "type" : "string" },
+    "status": { "type" : "string" },
+    "admin-id": { "type" : "string" },
+    "suspension-reason": { "type" : "string" },
+    "primary-ns-tenant-key": { "type" : "string" },
+    "secondary-ns-tenant-key": { "type" : "string" }
+
+  },
+  "required": ["customer-id", "tenant-id", "status", "admin-id", "suspension-reason"],
+  "additionalProperties": false
+
+}
